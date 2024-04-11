@@ -7,15 +7,15 @@ function computerplay(){
     
     switch(x){
         case 0:
-            image.src = "c:\\Users\\Acer\\Pictures\\Screenshots\\Screenshot 2024-04-03 012750.png";
+            image.src = "Screenshot 2024-04-03 012750.png";
             div.appendChild(image);
             return 'rock';
         case 1:
-            image.src = "c:\\Users\\Acer\\Pictures\\Screenshots\\Screenshot 2024-04-03 012804.png";
+            image.src = "Screenshot 2024-04-03 012804.png";
             div.appendChild(image);
             return 'paper';
         case 2:
-            image.src = "c:\\Users\\Acer\\Pictures\\Screenshots\\Screenshot 2024-04-03 012810.png";
+            image.src = "Screenshot 2024-04-03 012810.png";
             div.appendChild(image);
             return 'scissor';
         default:
@@ -47,17 +47,17 @@ opt.addEventListener("click",(e)=>{
     let x = e.target;
     switch(x.id){
         case "rock":
-            let ding = new Audio("C:\\Users\\Acer\\Desktop\\web dev\\rock.mp3");
+            let ding = new Audio("rock.mp3");
 	        ding.play();
             round_win = playround(computerplay(),"rock");
             break;
         case "paper":
-            let ding2 = new Audio("C:\\Users\\Acer\\Desktop\\web dev\\paper.mp3");
+            let ding2 = new Audio("paper.mp3");
 	        ding2.play();
             round_win = playround(computerplay(),"paper");
             break;
         case "scissor":
-            let ding3 = new Audio("C:\\Users\\Acer\\Desktop\\web dev\\scissor.mp3");
+            let ding3 = new Audio("scissor.mp3");
 	        ding3.play();
             round_win = playround(computerplay(),"scissor");
             break;
